@@ -1,0 +1,23 @@
+
+// Base Styles
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+// Universal Selector
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+// Base Styles
+body {
+    font-family: $font-family-base;
+    line-height: $line-height-base;
+    margin: 0; // Ensures there's no margin on the body
+    padding: 0; // Ensures there's no padding on the body
+}
