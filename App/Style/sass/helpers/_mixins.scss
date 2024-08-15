@@ -54,3 +54,9 @@
         @content;
     }
 }
+
+@mixin light-card-styles {
+    @include prefix(box-shadow, $small-b-shadow, webkit moz ms o);
+    @include prefix(border-radius, rem(8), webkit moz ms o);
+    border: rem(1) solid $neutral-white-300;
+}

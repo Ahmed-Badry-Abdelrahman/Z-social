@@ -1,25 +1,30 @@
 @import '../helpers/variables';
 @import '../components/button';
+@import '../components/cards';
 @import '../base/base';
 
 .login-container {
     .row {
         .content {
-            max-width: rem(384);
+
             @include small() {
                 max-width: rem(464);
             }
+
             .logo {
+                margin-bottom: rem(64);
+
                 @include small() {
                     margin-bottom: rem(20);
                 }
-                margin-bottom: rem(64);
 
                 >figure {
                     width: rem(32);
                     height: rem(32);
 
-                    >img {}
+                    >img {
+                        // Styles for image if needed
+                    }
                 }
 
                 h1 {
@@ -30,12 +35,12 @@
 
             .sub-content {
                 @include small() {
-                    @include prefix(box-shadow, $small-b-shadow , webkit moz ms o);
-                    padding:  2rem rem(32);
-                    @include prefix(border-radius, rem(8), webkit moz ms o);
-                    border: rem(1) solid $neutral-white-300;
+                    padding: 2rem rem(32);
+                    @include light-card-styles;
                 }
-                .log-google {
+
+                .log-google,
+                .log-email {
                     width: 100%;
 
                     >a {
@@ -47,24 +52,14 @@
                             border: 1px solid $neutral-white-100;
                         }
 
-                        >svg {}
+                        >svg {
+                            // Styles for svg if needed
+                        }
                     }
                 }
 
                 .log-email {
                     margin-bottom: rem(39);
-
-                    >a {
-                        padding: rem(12) rem(24);
-                        @include prefix(transition, all ease .4s, webkit moz ms o);
-
-                        &:hover {
-                            background-color: $neutral-white-200;
-                            border: 1px solid $neutral-white-100;
-                        }
-
-                        >svg {}
-                    }
                 }
 
                 >.hr-or {
@@ -77,12 +72,12 @@
                     &::before {
                         content: 'OR';
                         position: absolute;
-                        top: 50%; // Center vertically
-                        left: 50%; // Center horizontally
-                        transform: translate(-50%, -50%); // Center adjustment
-                        background: white; // Background color for visibility
-                        padding: 0 0.5rem; // Padding for background
-                        color: $neutral-black-500; // Ensure text color is set
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: white;
+                        padding: 0 0.5rem;
+                        color: $neutral-black-500;
                     }
                 }
 
@@ -104,11 +99,9 @@
                     >a {
                         cursor: pointer;
                         color: $neutral-black-900;
-
                     }
                 }
             }
-
         }
     }
 }
