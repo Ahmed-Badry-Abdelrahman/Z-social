@@ -1,0 +1,23 @@
+.main-Btn {
+    height: rem(44);
+    padding: 0 2rem;
+    font-size: $font-size-base;
+    font-weight: $font-weight-Medium;
+    line-height: $line-height-base;
+    background-color: $neutral-black-900;
+    color: $neutral-white-900;
+    border: none;
+    @include prefix(border-radius, rem(6), (webkit moz ms o))
+}
+
+.post-Btn {
+    height: rem(32);
+    padding: rem(1) rem(20);
+    background-color: $primary-900;
+    font-size: $font-size-base;
+    font-weight: $font-weight-Medium;
+    line-height: $line-height-base;
+    border: none;
+    color: $neutral-white-900;
+    @include prefix(border-radius, rem(100), (webkit moz ms o))
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/App/Style/loginPage.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container login-container p-4 h-100 d-flex justify-content-center align-items-center">
+        <div class="row justify-content-center align-items-center">
+            <div class=" content px-4">
+                <!-- logo -->
+                <div class="logo d-flex justify-content-center align-items-center">
+                    <figure class="me-2">
+                        <img src="/App/images/logo/Dark-logo.png" class="img-fluid" alt="Logo">
+                    </figure>
+                    <h1>Social</h1>
+                </div>
+
+                <div class="sub-content">
+                    <!-- login with google -->
+                    <div class="log-google  py-0 text-center ">
+                        <a href="#" class="btn mb-3 w-100 Border Body-Regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em"
+                                class="main-grid-item-icon me-1" fill="none">
+                                <path
+                                    d="M24 12.276c0-.816-.067-1.636-.211-2.438H12.242v4.62h6.612a5.549 5.549 0 0 1-2.447 3.647v2.998h3.945C22.669 19.013 24 15.927 24 12.276Z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12.241 24c3.302 0 6.086-1.063 8.115-2.897l-3.945-2.998c-1.097.732-2.514 1.146-4.165 1.146-3.194 0-5.902-2.112-6.873-4.951H1.302v3.09C3.38 21.444 7.612 24 12.242 24Z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.369 14.3a7.053 7.053 0 0 1 0-4.595v-3.09H1.302a11.798 11.798 0 0 0 0 10.776L5.369 14.3Z"
+                                    fill="#FBBC04" />
+                                <path
+                                    d="M12.241 4.75a6.727 6.727 0 0 1 4.696 1.798l3.495-3.425A11.898 11.898 0 0 0 12.243 0C7.611 0 3.38 2.558 1.301 6.615l4.067 3.09C6.336 6.862 9.048 4.75 12.24 4.75Z"
+                                    fill="#EA4335" />
+                            </svg>
+                            Log in with Google
+                        </a>
+                    </div>
+
+                    <!-- login with email -->
+                    <div class="log-email  py-0 text-center">
+                        <a href="#" class="btn w-100 Border Body-Regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="1em" height="1em"
+                                viewBox="0 0 32 32">
+                                <path fill="currentColor"
+                                    d="M2.004 9.303A4.5 4.5 0 0 1 6.5 5h19a4.5 4.5 0 0 1 4.496 4.303l-1.476.82L16 16.864L3.48 10.123zM2 11.588V22.5A4.5 4.5 0 0 0 6.5 27h19a4.5 4.5 0 0 0 4.5-4.5V11.588l-.526.293l-13 7a1 1 0 0 1-.948 0L2.514 11.874z" />
+                            </svg>
+                            Log in with Email
+                        </a>
+                    </div>
+
+                    <div class="hr-or Label-Medium">
+                    </div>
+
+                    <div class="log-form ">
+                        <form>
+                            <div class="form-group mb-3 ">
+                                <input type="email" class="Input w-100" id="email" required placeholder="Email">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="password" class=" Input w-100" id="password" required
+                                    placeholder="Password">
+                            </div>
+                            <p class="forget-pass text-end mb-4 Label-Regular ">Forget Password?</p>
+                            <button type="submit" class="main-Btn w-100">Log in</button>
+                        </form>
+                    </div>
+
+                    <p class="sign-up text-center mb-0 Body-Regular">Don't have an account? <a href="#"
+                            class="Body-Medium text-decoration-none">Sign up</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./App/scripts/main.js"></script>
+</body>
+
+</html>
+
+<!-- 
+mb-1 =>  0.25rem == 4px
+mb-2 =>  0.5rem == 8px
+mb-3 =>  1rem == 16px
+mb-4 =>  1.5rem == 24px
+mb-5 =>  3rem == 48px
+-->
