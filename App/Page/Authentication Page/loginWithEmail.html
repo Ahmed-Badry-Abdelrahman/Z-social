@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/App/Style/loginWithEmail.css">
+    <title>Forget Password</title>
+</head>
+
+<body>
+    <div class="container-sm login-with-email-container p-4 h-100 d-flex justify-content-center align-items-center">
+        <div class="row justify-content-center align-items-center w-100">
+            <div class="content px-4">
+                <!-- logo -->
+                <div class="logo d-flex justify-content-center align-items-center">
+                    <figure class="me-2">
+                        <img src="/App/images/logo/Dark-logo.png" class="img-fluid" alt="Logo">
+                    </figure>
+                    <h1>Social</h1>
+                </div>
+
+                <div class="sub-content">
+                    <h5 class="text-center mb-4">Enter your email</h5>
+                    <!-- edit in js to add user email -->
+                    <p class="text-center Body-Regular"> We'll send a secure link for instant access to your account.</p>
+                    <div class="login-with-email d-flex flex-column">
+                        <form class="d-flex flex-column justify-content-center mb-4">
+                            <input type="email" class="Input " name="email" placeholder="Email" required>
+                            <button id="Send-reset-link-btn" type="submit" class="main-Btn"> Send link </button>
+                        </form>
+                        <!-- edit in js to handle time resend -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- back to login button -->
+        <p class="back__to__login Body-Medium d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                class="main-grid-item-icon me-2" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2">
+                <polyline points="15 18 9 12 15 6" />
+            </svg>
+            Back
+        </p>
+    </div>
+    <!-- alert message -->
+
+    <!-- in js we need to add toggle show class and specific the type of alert [warning__icon / success__icon /prevent__icon ]-->
+    <!-- add close class to svg icon to close alert -->
+    <div class="main__alert   rounded success__icon">
+        <div class="alert__content d-flex align-items-center justify-content-between">
+            <div class="alert__body">
+                <span id="alert__message">Please enter a valid email.</span>
+            </div>
+
+            <svg id="alert__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                class="main-grid-item-icon alert__close" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2">
+                <line x1="18" x2="6" y1="6" y2="18" />
+                <line x1="6" x2="18" y1="6" y2="18" />
+            </svg>
+        </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./App/scripts/main.js"></script>
+</body>
+
+</html>
