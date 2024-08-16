@@ -60,3 +60,21 @@
     @include prefix(border-radius, rem(8), webkit moz ms o);
     border: rem(1) solid $neutral-white-300;
 }
+
+@mixin keyFrame($animation-name) {
+    @keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+}

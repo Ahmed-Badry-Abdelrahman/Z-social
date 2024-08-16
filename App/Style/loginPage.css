@@ -20,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  position: relative;
 }
 
 .Border {
@@ -102,6 +103,78 @@ body {
   border-radius: 6.25rem;
 }
 
+.main__alert {
+  display: none;
+}
+@media (max-width: 575px) {
+  .main__alert {
+    width: 90%;
+  }
+}
+.main__alert.show {
+  display: block;
+  position: absolute;
+  margin-left: 20px;
+  top: 30px;
+  left: 0;
+  padding: 0.625rem;
+  background-color: #eee;
+  animation: fedOut 1s linear;
+  -webkit-animation: fedOut 1s linear;
+}
+.main__alert.warning__icon > .alert__content > .alert__body, .main__alert.success__icon > .alert__content > .alert__body, .main__alert.prevent__icon > .alert__content > .alert__body {
+  position: relative;
+  padding-left: 1.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 175%;
+  margin-right: 1.875rem;
+}
+@media (max-width: 575px) {
+  .main__alert.warning__icon > .alert__content > .alert__body, .main__alert.success__icon > .alert__content > .alert__body, .main__alert.prevent__icon > .alert__content > .alert__body {
+    margin-right: 0rem;
+  }
+}
+.main__alert.warning__icon > .alert__content > .alert__body::before, .main__alert.success__icon > .alert__content > .alert__body::before, .main__alert.prevent__icon > .alert__content > .alert__body::before {
+  font-family: "bootstrap-icons";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.25rem;
+  margin-right: 10px;
+}
+.main__alert.warning__icon {
+  background-color: #B81616;
+  color: #FFFFFF;
+}
+.main__alert.warning__icon > .alert__content > .alert__body::before {
+  content: "\f33b";
+}
+.main__alert.success__icon {
+  background-color: #036B30;
+  color: #FAFBFF;
+}
+.main__alert.success__icon > .alert__content > .alert__body::before {
+  content: "\f633";
+}
+.main__alert.prevent__icon {
+  background-color: #0C1024;
+  color: #FAFBFF;
+}
+.main__alert.prevent__icon > .alert__content > .alert__body::before {
+  content: "\f333";
+}
+
+@keyframes fedOut {
+  0% {
+    opacity: 0;
+    left: -50%;
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
+  }
+}
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -122,6 +195,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  position: relative;
 }
 
 .Border {
