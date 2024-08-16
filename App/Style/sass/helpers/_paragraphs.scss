@@ -1,0 +1,24 @@
+// paragraph class
+.Body-Regular {
+    font-size: 0.875rem;
+    font-weight: $font-weight-Regular;
+    line-height: 175%;
+}
+
+.Body-Medium {
+    font-size: 0.875rem;
+    font-weight: $font-weight-Medium;
+    line-height: 175%;
+}
+
+.Label-Regular {
+    font-size: 0.75rem;
+    font-weight: $font-weight-Regular;
+    line-height: auto;
+}
+
+.Label-Medium {
+    font-size: 0.75rem;
+    font-weight: $font-weight-Medium;
+    line-height: auto;
+}

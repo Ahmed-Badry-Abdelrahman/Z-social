@@ -1,0 +1,77 @@
+@import '../helpers/variables';
+@import '../components/button';
+@import '../components/cards';
+@import '../components/alert';
+@import '../base/base';
+
+.verifyOtp-container {
+    .row {
+        .content {
+
+            @include small() {
+                max-width: rem(464);
+            }
+
+            .logo {
+                margin-bottom: rem(64);
+
+                @include small() {
+                    margin-bottom: rem(20);
+                }
+
+                >figure {
+                    width: rem(32);
+                    height: rem(32);
+
+                    >img {
+                        // Styles for image if needed
+                    }
+                }
+
+                h1 {
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                }
+            }
+
+            .sub-content {
+                @include small() {
+                    padding: rem(64) rem(30);
+                    @include light-card-styles;
+                }
+                >h5 {}
+
+                >p {
+                    margin-bottom: rem(40);
+                    color: $neutral-black-500;
+                }
+
+                >.verify__code {
+                    >form {
+                        >input {
+                            width: rem(44);
+                            height: rem(44);
+                            padding: rem(9) rem(16);
+                            border: 1px solid $neutral-white-400;
+                            @include prefix(border-radius, rem(6), webkit moz ms o);
+                            &:focus  {
+                                outline-color: $neutral-black-100;
+                            }
+                        }
+                    }
+                    
+                    >p.resend__OTP {
+                        margin-bottom: rem(48);
+                        color: $neutral-black-500;
+                        >span {
+                            color: $neutral-black-900;
+                        }
+                    }
+
+                    >button {}
+                }
+            }
+        }
+    }
+
+}

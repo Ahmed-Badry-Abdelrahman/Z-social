@@ -1,0 +1,34 @@
+// border class
+
+.Border {
+    border: 1px solid $neutral-white-300;
+}
+
+
+// input 
+.Input {
+    position: relative;
+    padding: rem(9) 2rem;
+    border: 1px solid $neutral-white-400;
+    font-weight: $font-weight-Regular;
+    line-height: 175%;
+    //transition: all ease 1s;
+    //-webkit-transition: all ease 1s;
+    //-moz-transition: all ease 1s;
+    //-ms-transition: all ease 1s;
+    //-o-transition: all ease 1s;
+    @include prefix(border-radius, rem(6) , webkit moz ms o);
+    @include prefix(transition, all ease 0.4s , webkit moz ms o);
+}
+
+.Input:focus {
+    outline: none;
+}
+
+
+.Input::placeholder {
+    font-size: $font-size-base;
+    font-weight: $font-weight-Regular;
+    line-height: $line-height-base;
+    color: $neutral-black-400;
+}
