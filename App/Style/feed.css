@@ -228,7 +228,7 @@ ul, li {
   cursor: pointer;
   z-index: 2;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .feed-container > .content > header > .header__container > .row > .chat {
     display: none;
   }
@@ -248,7 +248,7 @@ ul, li {
     display: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .feed-container > .content > header > .header__container > .row > .logout {
     display: block;
   }
@@ -679,7 +679,7 @@ ul, li {
   -o-box-shadow: rgba(0, 0, 0, 0.05) 2px 2px 30px 0px;
   box-shadow: rgba(0, 0, 0, 0.05) 2px 2px 30px 0px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .feed-container > .content > footer {
     display: none;
   }
