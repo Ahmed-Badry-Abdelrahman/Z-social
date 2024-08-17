@@ -11,17 +11,21 @@
             height: rem(72);
             z-index: 10;
             background-color: $neutral-white-900;
-            border-bottom: 1px solid $neutral-white-300;
+            border-bottom: rem(1) solid $neutral-white-300;
+
             >.header__container {
                 >.row {
                     padding: rem(20);
+
                     >.logo {
-                        >a{
-                            >figure{
+                        >a {
+                            >figure {
                                 width: rem(32);
                                 height: rem(32);
+
                                 >img {}
-                                >h1{
+
+                                >h1 {
                                     font-family: $font-family-secondary;
                                     font-size: rem(18);
                                     font-weight: 800;
@@ -31,31 +35,15 @@
                     }
 
                     >.search__bar {
-                        @include phone(){
-                            &{
-                                display: none;
-                            }
-                        }
-
-                        @include small(){
-                            &{
-                                display: none;
-                            }
-                        }
-
-                        @include medium(){
-                            &{
-                                display: block;
-                            }
-                        }
-
                         max-width: rem(582);
                         position: relative;
-                        >input{
+
+                        >input {
                             width: 100%;
                             height: rem(44);
                             padding: rem(9) rem(24);
                             padding-left: rem(50);
+
                             &::placeholder {
                                 color: $neutral-black-400;
                                 font-size: 0.875rem;
@@ -74,18 +62,13 @@
                             color: $neutral-black-500;
                             cursor: pointer;
                             z-index: 2;
-}
+                        }
                     }
 
                     >.chat {
-                        @include large(){
-                            &{
-                                display: none;
-                            }
-                        }
-                        >.chat__icon{
-                            >a{
-                                >svg{
+                        >.chat__icon {
+                            >a {
+                                >svg {
                                     width: rem(20);
                                     height: rem(20);
                                     color: $neutral-black-500;
@@ -95,27 +78,14 @@
                     }
 
                     >.logout {
-                        @include phone(){
-                            &{
-                                display: none;
-                            }
-                        }
-                        @include small(){
-                            &{
-                                display: none;
-                            }
-                        }
-                        @include large(){
-                            &{
-                                display: block;
-                            }
-                        }
-                        >a{
-                            >p{
+
+                        >a {
+                            >p {
                                 color: $neutral-black-800;
                                 cursor: pointer;
                             }
-                            >svg{
+
+                            >svg {
                                 width: rem(20);
                                 height: rem(20);
                                 color: $neutral-black-500;

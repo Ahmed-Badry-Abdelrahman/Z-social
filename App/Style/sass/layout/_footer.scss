@@ -6,11 +6,10 @@
 .feed-container {
     >.content {
         >footer {
-            @include large{
-                &{
-                    display: none;
-                }
+            @include large {
+                display: none;
             }
+
             position: fixed;
             bottom: 0;
             left: 0;

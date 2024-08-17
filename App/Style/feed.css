@@ -167,7 +167,7 @@ ul, li {
   height: 4.5rem;
   z-index: 10;
   background-color: #FFFFFF;
-  border-bottom: 1px solid #ECF0F5;
+  border-bottom: 0.0625rem solid #ECF0F5;
 }
 .feed-container > .content > header > .header__container > .row {
   padding: 1.25rem;
@@ -184,21 +184,6 @@ ul, li {
 .feed-container > .content > header > .header__container > .row > .search__bar {
   max-width: 36.375rem;
   position: relative;
-}
-@media (max-width: 575px) {
-  .feed-container > .content > header > .header__container > .row > .search__bar {
-    display: none;
-  }
-}
-@media (min-width: 576px) {
-  .feed-container > .content > header > .header__container > .row > .search__bar {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .feed-container > .content > header > .header__container > .row > .search__bar {
-    display: block;
-  }
 }
 .feed-container > .content > header > .header__container > .row > .search__bar > input {
   width: 100%;
@@ -229,30 +214,10 @@ ul, li {
   cursor: pointer;
   z-index: 2;
 }
-@media (min-width: 992px) {
-  .feed-container > .content > header > .header__container > .row > .chat {
-    display: none;
-  }
-}
 .feed-container > .content > header > .header__container > .row > .chat > .chat__icon > a > svg {
   width: 1.25rem;
   height: 1.25rem;
   color: #5D6778;
-}
-@media (max-width: 575px) {
-  .feed-container > .content > header > .header__container > .row > .logout {
-    display: none;
-  }
-}
-@media (min-width: 576px) {
-  .feed-container > .content > header > .header__container > .row > .logout {
-    display: none;
-  }
-}
-@media (min-width: 992px) {
-  .feed-container > .content > header > .header__container > .row > .logout {
-    display: block;
-  }
 }
 .feed-container > .content > header > .header__container > .row > .logout > a > p {
   color: #27364B;
@@ -468,10 +433,6 @@ ul, li {
   width: 2.5rem;
   height: 2.5rem;
 }
-.posts__container > .content > .row > .main__body__content > .header__main__body > .write__post > .area__to__write > .profile__img > figure {
-  width: 2.5rem;
-  height: 2.5rem;
-}
 .posts__container > .content > .row > .main__body__content > .header__main__body > .write__post > .area__to__write > .profile__img > figure > img {
   width: 100%;
   height: 100%;
@@ -534,8 +495,8 @@ ul, li {
   height: 3.5rem;
 }
 .posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header > .user__info > .post__profile__img > figure {
-  width: 3rem;
-  height: 3rem;
+  width: 100%;
+  height: 100%;
 }
 .posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header > .user__info > .post__profile__img > figure > img {
   width: 100%;
