@@ -82,7 +82,7 @@ h5 {
   color: #0C1024;
 }
 
-h6 {
+.h6 {
   font-size: 0.875rem;
   font-weight: 500;
   color: #0C1024;
@@ -342,7 +342,7 @@ h5 {
   color: #0C1024;
 }
 
-h6 {
+.h6 {
   font-size: 0.875rem;
   font-weight: 500;
   color: #0C1024;
@@ -513,6 +513,77 @@ ul, li {
 .posts__container > .content > .row > .main__body__content > .header__main__body > .write__post > .area__to__write > .post__options > .post__controls > .shear__post_btn > button {
   width: 4.4375rem;
 }
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card {
+  border: 1px solid #ECF0F5;
+  -ms-box-shadow: rgba(0, 0, 0, 0.05) 2px 2px 30px 0px;
+  -o-box-shadow: rgba(0, 0, 0, 0.05) 2px 2px 30px 0px;
+  box-shadow: rgba(0, 0, 0, 0.05) 2px 2px 30px 0px;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header {
+  border-bottom: 0.0625rem solid #ECF0F5;
+  background-color: #F1F4F9;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header > .user__info > .post__profile__img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header > .user__info > .post__profile__img > figure {
+  width: 3rem;
+  height: 3rem;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header > .user__info > .post__profile__img > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header > .user__info > .user__info__details > h5 {
+  color: #0C1024;
+  margin-bottom: 0;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header > .user__info > .user__info__details > p {
+  font-size: 0.75rem;
+  color: #4B5669;
+  margin-bottom: 0;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header > .card__options > .dropdown > i {
+  font-size: 1.25rem;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header > .card__options > .dropdown > ul > li > a {
+  color: #5D6778;
+  font-size: 0.875rem;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header > .card__options > .dropdown > ul > li > a:focus {
+  background-color: #ABB0B9;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-body > p.post__text {
+  text-align: justify;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-body > .post__media > figure > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.25rem;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-footer {
+  border-top: 0.0625rem solid #ECF0F5;
+  background-color: #F1F4F9;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-footer > ul > li > a > i {
+  color: #5D6778;
+  font-size: 0.875rem;
+  margin-right: 10px;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-footer > ul > li > a > svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #5D6778;
+}
+.posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-footer > ul > li:nth-child(2) > a > i {
+  font-size: 1.125rem;
+}
 .Body-Regular {
   font-size: 0.875rem;
   font-weight: 400;
@@ -591,7 +662,7 @@ h5 {
   color: #0C1024;
 }
 
-h6 {
+.h6 {
   font-size: 0.875rem;
   font-weight: 500;
   color: #0C1024;

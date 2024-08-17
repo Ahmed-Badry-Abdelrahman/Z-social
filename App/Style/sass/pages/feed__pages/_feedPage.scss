@@ -14,6 +14,7 @@
 
             >.main__body__content {
                 padding: 0 rem(16);
+
                 >.header__main__body {
                     padding: rem(21) 0;
                     border-top: rem(1) solid $neutral-white-300;
@@ -73,16 +74,17 @@
                                 >.post__controls {
                                     >.add__img {
                                         cursor: pointer;
+
                                         >i {
                                             font-size: rem(20);
                                             font-weight: $font-weight-Medium;
                                             color: $neutral-black-800;
-                                            
+
                                         }
                                     }
-    
+
                                     >.shear__post_btn {
-                                        >button{
+                                        >button {
                                             width: rem(71);
                                         }
                                     }
@@ -93,8 +95,121 @@
                     }
                 }
 
-                >.posts {}
+                >.posts {
+                    >.post {
+                        >.card {
+                            border: 1px solid $neutral-white-300;
+                            @include prefix(box-shadow, $medium-b-shadow, webkit moz ms o);
+                            >.card-header {
+                                border-bottom: rem(1) solid $neutral-white-300;
+                                background-color: $neutral-white-200;
+                                >.user__info {
+                                    >.post__profile__img {
+                                        width: rem(56);
+                                        height: rem(56);
+
+                                        >figure {
+                                            width: rem(48);
+                                            height: rem(48);
+
+                                            >img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                                @include prefix(border-radius, 50%, webkit moz ms o);
+                                            }
+                                        }
+                                    }
+
+                                    >.user__info__details {
+                                        >h5 {
+                                            color: $neutral-black-900;
+                                            margin-bottom: 0;
+                                        }
+
+                                        >p {
+                                            font-size: rem(12);
+                                            color: $neutral-black-600;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+
+                                >.card__options {
+                                    >.dropdown {
+                                        >i {
+                                            font-size: rem(20);
+                                        }
+
+                                        >ul {
+                                            >li {
+                                                >a {
+                                                    color: $neutral-black-500;
+                                                    font-size: $font-size-base;
+
+                                                    &:focus {
+                                                        background-color: $neutral-black-100;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            >.card-body {
+                                >p.post__text {
+                                    text-align: justify;
+                                }
+
+                                >.post__media {
+                                    >figure {
+                                        >img {
+                                            width: 100%;
+                                            height: auto;
+                                            object-fit: cover;
+                                            @include prefix(border-radius, rem(4), webkit moz ms o)
+                                        }
+                                    }
+                                }
+                            }
+
+                            >.card-footer {
+                                border-top: rem(1) solid $neutral-white-300;
+                                background-color: $neutral-white-200;
+                                >ul {
+                                    >li {
+                                        >a {
+                                            >i {
+                                                color: $neutral-black-500;
+                                                font-size: $font-size-base;
+                                                margin-right: 10px;
+                                            }
+
+                                            >svg {
+                                                width: rem(20);
+                                                height: rem(20);
+                                                color: $neutral-black-500;
+                                            }
+                                        }
+                                    }
+
+                                    >li:nth-child(2) {
+                                        >a {
+                                            >i {
+                                                font-size: rem(18);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
             }
+
+            >aside.right__side {}
         }
     }
 }
