@@ -1,0 +1,29 @@
+@import '../helpers/variables';
+@import '../components/input';
+@import '../base/base';
+
+.feed-container {
+    >.content {
+        >header {
+            >.container {
+                >.row {
+                    >.logo {
+                        >figure{
+                            >img {}
+                            >h1{}
+                        }
+                    }
+                    >.chat {
+                        >.chat__icon{
+                            >a{
+                                >svg{
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
