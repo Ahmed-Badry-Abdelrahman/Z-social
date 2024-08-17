@@ -5,6 +5,11 @@
 .feed-container {
     >.content {
         >header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            background-color: $neutral-white-900;
             >.header__container {
                 >.row {
                     padding: rem(20);
