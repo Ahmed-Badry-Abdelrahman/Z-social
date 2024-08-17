@@ -4,9 +4,9 @@
 @import '../../base/base';
 
 .posts__container {
-    margin-top: rem(80);
+    margin-top: rem(120);
     padding-bottom: rem(80);
-    // background-color: #eee;
+
 
     >.content {
         >.row {
@@ -16,12 +16,15 @@
                 padding: 0 rem(16);
 
                 >.header__main__body {
-                    padding: rem(21) 0;
-                    border-top: rem(1) solid $neutral-white-300;
-                    border-bottom: rem(1) solid $neutral-white-300;
+                    background-color: $neutral-white-900;
+                    @include prefix(border-radius, rem(6) ,webkit moz ms o);
+                    @include prefix(box-shadow, $small-b-shadow ,webkit moz ms o);
+                    padding: rem(21) rem(16);
+                    border: rem(1) solid $neutral-white-300;
 
                     >.write__post {
                         >.area__to__write {
+                            
                             margin-bottom: 16px;
 
                             >.profile__img {
@@ -99,10 +102,10 @@
                     >.post {
                         >.card {
                             border: 1px solid $neutral-white-300;
-                            @include prefix(box-shadow, $medium-b-shadow, webkit moz ms o);
+                            @include prefix(box-shadow, $small-b-shadow, webkit moz ms o);
                             >.card-header {
                                 border-bottom: rem(1) solid $neutral-white-300;
-                                background-color: $neutral-white-200;
+                                background-color: $neutral-white-900;
                                 >.user__info {
                                     >.post__profile__img {
                                         width: rem(56);
@@ -176,7 +179,7 @@
 
                             >.card-footer {
                                 border-top: rem(1) solid $neutral-white-300;
-                                background-color: $neutral-white-200;
+                                background-color: $neutral-white-900;
                                 >ul {
                                     >li {
                                         >a {

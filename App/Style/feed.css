@@ -141,6 +141,7 @@ body {
   padding: 0;
   height: 100%;
   position: relative;
+  background-color: #FAFBFF;
 }
 
 .fe__logo {
@@ -425,6 +426,7 @@ body {
   padding: 0;
   height: 100%;
   position: relative;
+  background-color: #FAFBFF;
 }
 
 .fe__logo {
@@ -444,16 +446,20 @@ ul, li {
 }
 
 .posts__container {
-  margin-top: 5rem;
+  margin-top: 7.5rem;
   padding-bottom: 5rem;
 }
 .posts__container > .content > .row > .main__body__content {
   padding: 0 1rem;
 }
 .posts__container > .content > .row > .main__body__content > .header__main__body {
-  padding: 1.3125rem 0;
-  border-top: 0.0625rem solid #ECF0F5;
-  border-bottom: 0.0625rem solid #ECF0F5;
+  background-color: #FFFFFF;
+  border-radius: 0.375rem;
+  -ms-box-shadow: rgba(0, 0, 0, 0.01) 2px 2px 10px 0px;
+  -o-box-shadow: rgba(0, 0, 0, 0.01) 2px 2px 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.01) 2px 2px 10px 0px;
+  padding: 1.3125rem 1rem;
+  border: 0.0625rem solid #ECF0F5;
 }
 .posts__container > .content > .row > .main__body__content > .header__main__body > .write__post > .area__to__write {
   margin-bottom: 16px;
@@ -515,13 +521,13 @@ ul, li {
 }
 .posts__container > .content > .row > .main__body__content > .posts > .post > .card {
   border: 1px solid #ECF0F5;
-  -ms-box-shadow: rgba(0, 0, 0, 0.05) 2px 2px 30px 0px;
-  -o-box-shadow: rgba(0, 0, 0, 0.05) 2px 2px 30px 0px;
-  box-shadow: rgba(0, 0, 0, 0.05) 2px 2px 30px 0px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.01) 2px 2px 10px 0px;
+  -o-box-shadow: rgba(0, 0, 0, 0.01) 2px 2px 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.01) 2px 2px 10px 0px;
 }
 .posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header {
   border-bottom: 0.0625rem solid #ECF0F5;
-  background-color: #F1F4F9;
+  background-color: #FFFFFF;
 }
 .posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-header > .user__info > .post__profile__img {
   width: 3.5rem;
@@ -569,7 +575,7 @@ ul, li {
 }
 .posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-footer {
   border-top: 0.0625rem solid #ECF0F5;
-  background-color: #F1F4F9;
+  background-color: #FFFFFF;
 }
 .posts__container > .content > .row > .main__body__content > .posts > .post > .card > .card-footer > ul > li > a > i {
   color: #5D6778;
@@ -721,6 +727,7 @@ body {
   padding: 0;
   height: 100%;
   position: relative;
+  background-color: #FAFBFF;
 }
 
 .fe__logo {
