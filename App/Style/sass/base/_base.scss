@@ -34,3 +34,12 @@ body {
     position: relative;
 }
 
+.fe__logo {
+    font-family: $font-family-secondary;
+    font-size: rem(18);
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+}

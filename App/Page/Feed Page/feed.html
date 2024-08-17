@@ -11,20 +11,34 @@
 </head>
 
 <body>
-    <div class="container feed-container">
+    <div class="container-md feed-container">
         <div class="content">
             <header>
-                <div class="container">
-                    <div class="row">
+                <div class="container-md header__container">
+                    <div class="row content d-flex justify-content-between align-items-center">
                         <!-- logo -->
-                        <div class="logo d-flex justify-content-center align-items-center">
-                            <figure class="me-2">
-                                <img src="/App/images/logo/Dark-logo.png" class="img-fluid" alt="Logo">
-                            </figure>
-                            <h1>Social</h1>
+                        <div class="col-6 col-sm-4 col-md-2 logo ">
+                            <a href="#" class="d-flex justify-content-start align-items-center">
+                                <figure class="m-0 me-1">
+                                    <img src="/App/images/logo/Dark-logo.png" class="img-fluid" alt="Logo">
+                                </figure>
+                                <h1 class="fe__logo m-0">Social</h1>
+                            </a>
                         </div>
 
-                        <div class="chat">
+                        <div class="col-8 search__bar">
+                            <!-- search bar -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" x2="16.65" y1="21" y2="16.65" />
+                            </svg>
+
+                            <input type="text" class="Input" placeholder="Search">
+                        </div>
+
+                        <div class="col-6 col-sm-4 chat text-end">
                             <div class="chat__icon">
                                 <a href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
@@ -35,6 +49,19 @@
                                     </svg>
                                 </a>
                             </div>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-md-2 logout">
+                            <a href="#" class="d-flex justify-content-center align-items-center">
+                                <p class="Body-Medium m-0 me-2">Logout</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                    class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+    
+                            </a>
                         </div>
                     </div>
                 </div>
