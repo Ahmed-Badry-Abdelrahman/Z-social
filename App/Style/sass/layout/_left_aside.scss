@@ -2,76 +2,84 @@
 @use '../helpers' as *;
 
 
-.feed-container {
-    >.content {
-        >.posts__container {
-            >.content {
-                >.row {
-                    >aside.left__side {
-                        >.card {
-                            border:  1px solid $neutral-white-300;
-                            position: sticky;
-                            top: rem(120);
+main {
+    >.row {
+        >aside.left__side {
+            >.card {
+                border: 1px solid $neutral-white-300;
+                position: sticky;
+                top: rem(133);
 
-                            >.card__header {
-                                height: rem(72);
-                                padding: 0;
-                                margin-bottom: rem(52);
-                                >figure.bg__profile_img {
-                                    position: relative;
-                                    width: 100%;
-                                    height: 100%;
-                                    >img {
-                                        width: 100%;
-                                        height: 100%;
-                                        object-fit: cover;
-                                    }
 
-                                    >figure.profile__img {
-                                        width: rem(56);
-                                        height: rem(56);
-                                        position: absolute;
-                                        top: rem(44);
-                                        left: rem(32);
-                                        >img {
-                                            border: rem(1) solid $neutral-white-900;
-                                            width: 100%;
-                                            height: 100%;
-                                            object-fit: cover;
-                                            border-radius: 50%;
-                                        }
-                                    }
-                                }
+                >.card__header {
+                    height: rem(72);
+                    padding: 0;
+                    margin-bottom: rem(52);
+
+                    >figure.bg__profile_img {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                        >figure.profile__img {
+                            width: rem(56);
+                            height: rem(56);
+                            position: absolute;
+                            top: rem(44);
+                            left: rem(32);
+
+                            >img {
+                                border: rem(1) solid $neutral-white-900;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 50%;
                             }
+                        }
+                    }
+                }
 
-                            >.card__body {
-                                >p:first-child {
+                >.card__body {
+                    >p:first-child {
+                        color: $neutral-black-900;
+                    }
+
+                    >p:last-child {
+                        color: $neutral-black-800;
+                    }
+                }
+
+                >.card__footer {
+                    >ul {
+                        padding-bottom: rem(12);
+                        >li {
+                            padding: rem(12) 0;
+                            >a {
+                                display: flex;
+                                align-items: center;
+                                gap: rem(10);
+                                color: $neutral-black-600;
+
+                                >svg {
+                                    width: rem(20);
+                                    height: rem(20);
+                                }
+
+                                &.active {
                                     color: $neutral-black-900;
                                 }
-
-                                >p:last-child {
-                                    color: $neutral-black-800;
-                                }
                             }
 
-                            >.card__footer {
-                                >ul {
-                                    >li {
-                                        padding: rem(12) 0;
-                                        >a {
-                                            display: flex;
-                                            align-items: center;
-                                            gap: rem(10);
-                                            color: $neutral-black-600;
-                                            >svg {
-                                                width: rem(20);
-                                                height: rem(20);
-                                            }
-                                            &.active{
-                                                color: $neutral-black-900;
-                                            }
-                                        }
-                                    }
+                            &:hover {
+                                border-right: rem(1) solid $neutral-white-300;
+                                >a{
+                                    color: $neutral-black-900;
                                 }
                             }
                         }

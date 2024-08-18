@@ -2,201 +2,199 @@
 @use '../../helpers' as *;
 
 
-.posts__container {
-    margin-top: rem(120);
-    padding-bottom: rem(80);
 
+main {
+    >.row {
+        >.main__body__content {
+            padding: 0 rem(16);
+            margin-top: rem(133);
+            >.header__main__body {
+                background-color: $neutral-white-900;
+                @include prefix(border-radius, rem(6), webkit moz ms o);
+                @include prefix(box-shadow, $small-b-shadow , webkit moz ms o);
+                padding: rem(21) rem(16);
+                border: rem(1) solid $neutral-white-300;
+                margin-bottom: rem(40);
 
-    >.content {
-        >.row {
-            >aside.left__side {}
+                >.write__post {
+                    >.area__to__write {
 
-            >.main__body__content {
-                padding: 0 rem(16);
+                        margin-bottom: 16px;
 
-                >.header__main__body {
-                    background-color: $neutral-white-900;
-                    @include prefix(border-radius, rem(6) ,webkit moz ms o);
-                    @include prefix(box-shadow, $small-b-shadow ,webkit moz ms o);
-                    padding: rem(21) rem(16);
-                    border: rem(1) solid $neutral-white-300;
+                        >.profile__img {
+                            width: rem(40);
+                            height: rem(40);
 
-                    >.write__post {
-                        >.area__to__write {
-                            
-                            margin-bottom: 16px;
-
-                            >.profile__img {
-                                width: rem(40);
-                                height: rem(40);
-
-                                >figure {
-                                    >img {
-                                        width: 100%;
-                                        height: 100%;
-                                        object-fit: cover;
-                                    }
-                                }
-                            }
-
-                            >.post__options {
-                                >textarea {
-                                    resize: none;
-                                    border: none;
-                                    outline: none;
+                            >figure {
+                                >img {
                                     width: 100%;
-                                    height: 64px;
-                                    padding: 10px;
-                                    overflow: hidden;
-                                    overflow-y: scroll;
-                                    scrollbar-width: none;
-                                    border-bottom: rem(1) solid $neutral-white-300;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+
+                        >.post__options {
+                            >textarea {
+                                resize: none;
+                                border: none;
+                                outline: none;
+                                width: 100%;
+                                height: 64px;
+                                padding: 10px;
+                                overflow: hidden;
+                                overflow-y: scroll;
+                                scrollbar-width: none;
+                                border-bottom: rem(1) solid $neutral-white-300;
 
 
-                                    &::-webkit-scrollbar {
-                                        display: none;
-                                    }
-
-                                    &:focus {
-                                        outline: none;
-                                    }
-
-                                    &::placeholder {
-                                        color: $neutral-black-300;
-                                        font-size: 0.875rem;
-                                        font-weight: $font-weight-Regular;
-                                        line-height: 175%;
-                                        // padding-top: 10px;
-                                    }
+                                &::-webkit-scrollbar {
+                                    display: none;
                                 }
 
-                                >.post__controls {
-                                    >.add__img {
-                                        cursor: pointer;
+                                &:focus {
+                                    outline: none;
+                                }
 
-                                        >i {
-                                            font-size: rem(20);
-                                            font-weight: $font-weight-Medium;
-                                            color: $neutral-black-800;
-
-                                        }
-                                    }
-
-                                    >.shear__post_btn {
-                                        >button {
-                                            width: rem(71);
-                                        }
-                                    }
+                                &::placeholder {
+                                    color: $neutral-black-300;
+                                    font-size: 0.875rem;
+                                    font-weight: $font-weight-Regular;
+                                    line-height: 175%;
+                                    // padding-top: 10px;
                                 }
                             }
 
+                            >.post__controls {
+                                >.add__img {
+                                    cursor: pointer;
+
+                                    >i {
+                                        font-size: rem(20);
+                                        font-weight: $font-weight-Medium;
+                                        color: $neutral-black-800;
+
+                                    }
+                                }
+
+                                >.shear__post_btn {
+                                    >button {
+                                        width: rem(71);
+                                    }
+                                }
+                            }
                         }
+
                     }
                 }
+            }
 
-                >.posts {
-                    >.post {
-                        >.card {
-                            border: 1px solid $neutral-white-300;
-                            @include prefix(box-shadow, $small-b-shadow, webkit moz ms o);
-                            >.card-header {
-                                border-bottom: rem(1) solid $neutral-white-300;
-                                background-color: $neutral-white-900;
-                                >.user__info {
-                                    >.post__profile__img {
-                                        width: rem(56);
-                                        height: rem(56);
+            >.posts {
+                >.post {
+                    >.card {
+                        border: 1px solid $neutral-white-300;
+                        @include prefix(box-shadow, $small-b-shadow, webkit moz ms o);
 
-                                        >figure {
+                        >.card-header {
+                            border-bottom: rem(1) solid $neutral-white-300;
+                            background-color: $neutral-white-900;
+
+                            >.user__info {
+                                >.post__profile__img {
+                                    width: rem(56);
+                                    height: rem(56);
+
+                                    >figure {
+                                        width: 100%;
+                                        height: 100%;
+
+                                        >img {
                                             width: 100%;
                                             height: 100%;
-                                            >img {
-                                                width: 100%;
-                                                height: 100%;
-                                                object-fit: cover;
-                                                @include prefix(border-radius, 50%, webkit moz ms o);
-                                            }
-                                        }
-                                    }
-
-                                    >.user__info__details {
-                                        >h5 {
-                                            color: $neutral-black-900;
-                                            margin-bottom: 0;
-                                        }
-
-                                        >p {
-                                            font-size: rem(12);
-                                            color: $neutral-black-600;
-                                            margin-bottom: 0;
+                                            object-fit: cover;
+                                            @include prefix(border-radius, 50%, webkit moz ms o);
                                         }
                                     }
                                 }
 
-                                >.card__options {
-                                    >.dropdown {
-                                        >i {
-                                            font-size: rem(20);
-                                        }
+                                >.user__info__details {
+                                    >h5 {
+                                        color: $neutral-black-900;
+                                        margin-bottom: 0;
+                                    }
 
-                                        >ul {
-                                            >li {
-                                                >a {
-                                                    color: $neutral-black-500;
-                                                    font-size: $font-size-base;
+                                    >p {
+                                        font-size: rem(12);
+                                        color: $neutral-black-600;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
 
-                                                    &:focus {
-                                                        background-color: $neutral-black-100;
-                                                    }
+                            >.card__options {
+                                >.dropdown {
+                                    >i {
+                                        font-size: rem(20);
+                                    }
+
+                                    >ul {
+                                        >li {
+                                            >a {
+                                                color: $neutral-black-500;
+                                                font-size: $font-size-base;
+
+                                                &:focus {
+                                                    background-color: $neutral-black-100;
                                                 }
                                             }
                                         }
                                     }
                                 }
                             }
+                        }
 
-                            >.card-body {
-                                >p.post__text {
-                                    text-align: justify;
-                                }
+                        >.card-body {
+                            >p.post__text {
+                                text-align: justify;
+                            }
 
-                                >.post__media {
-                                    >figure {
-                                        >img {
-                                            width: 100%;
-                                            height: auto;
-                                            object-fit: cover;
-                                            @include prefix(border-radius, rem(4), webkit moz ms o)
-                                        }
+                            >.post__media {
+                                >figure {
+                                    >img {
+                                        width: 100%;
+                                        height: auto;
+                                        object-fit: cover;
+                                        @include prefix(border-radius, rem(4), webkit moz ms o)
                                     }
                                 }
                             }
+                        }
 
-                            >.card-footer {
-                                border-top: rem(1) solid $neutral-white-300;
-                                background-color: $neutral-white-900;
-                                >ul {
-                                    >li {
-                                        >a {
-                                            >i {
-                                                color: $neutral-black-500;
-                                                font-size: $font-size-base;
-                                                margin-right: 10px;
-                                            }
+                        >.card-footer {
+                            border-top: rem(1) solid $neutral-white-300;
+                            background-color: $neutral-white-900;
 
-                                            >svg {
-                                                width: rem(20);
-                                                height: rem(20);
-                                                color: $neutral-black-500;
-                                            }
+                            >ul {
+                                >li {
+                                    >a {
+                                        >i {
+                                            color: $neutral-black-500;
+                                            font-size: $font-size-base;
+                                            margin-right: 10px;
+                                        }
+
+                                        >svg {
+                                            width: rem(20);
+                                            height: rem(20);
+                                            color: $neutral-black-500;
                                         }
                                     }
+                                }
 
-                                    >li:nth-child(2) {
-                                        >a {
-                                            >i {
-                                                font-size: rem(18);
-                                            }
+                                >li:nth-child(2) {
+                                    >a {
+                                        >i {
+                                            font-size: rem(18);
                                         }
                                     }
                                 }
@@ -204,10 +202,10 @@
                         }
                     }
                 }
-
             }
 
-            >aside.right__side {}
         }
+
     }
+
 }
