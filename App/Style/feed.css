@@ -88,6 +88,20 @@ h5 {
   color: #0C1024;
 }
 
+:root {
+  --primary-color: #959CE5; /* default light mode primary color */
+  --background-color: #FFFFFF;
+  --text-color: #0C1024;
+  --border-color: #ECF0F5;
+}
+
+[data-theme=dark] {
+  --primary-color: #6174D9;
+  --background-color: #0C1024;
+  --text-color: #FAFBFF;
+  --border-color: #707988;
+}
+
 .Border {
   border: 1px solid #ECF0F5;
 }
@@ -166,8 +180,8 @@ ul, li {
   left: 0;
   height: 4.5rem;
   z-index: 10;
-  background-color: #FFFFFF;
-  border-bottom: 0.0625rem solid #ECF0F5;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .feed-container > .content > header > .header__container > .row {
   padding: 1.25rem;

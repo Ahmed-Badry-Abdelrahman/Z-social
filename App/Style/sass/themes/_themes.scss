@@ -1,0 +1,52 @@
+// // Light Mode Colors
+// $light-theme: (
+//     primary: $primary-500,
+//     background: $neutral-white-900,
+//     text: $neutral-black-900,
+//     border: $neutral-white-300
+// );
+
+// // Dark Mode Colors
+// $dark-theme: (
+//     primary: $primary-800,
+//     background: $neutral-black-900,
+//     text: $neutral-white-100,
+//     border: $neutral-black-300
+// );
+
+// :root {
+//     --primary-color: #959CE5;  /* default light mode primary color */
+//     --background-color: #FFFFFF;
+//     --text-color: #0C1024;
+//     --border-color: #ECF0F5;
+// }
+
+// [data-theme='dark'] {
+//     --primary-color: #6174D9;
+//     --background-color: #0C1024;
+//     --text-color: #FAFBFF;
+//     --border-color: #707988;
+// }
+
+
+// js code in future 
+// const toggleButton = document.getElementById('theme-toggle');
+
+// // Function to apply the theme
+// function applyTheme(theme) {
+//     document.documentElement.setAttribute('data-theme', theme);
+// }
+
+// // Check for a saved theme in local storage and apply it
+// const savedTheme = localStorage.getItem('theme');
+// if (savedTheme) {
+//     applyTheme(savedTheme);
+// }
+
+// toggleButton.addEventListener('click', () => {
+//     console.log('clicked');
+//     const currentTheme = document.documentElement.getAttribute('data-theme');
+//     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+//     applyTheme(newTheme);
+//     localStorage.setItem('theme', newTheme); // Save the new theme in local storage
+// });
