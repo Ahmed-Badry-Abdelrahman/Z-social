@@ -1,9 +1,6 @@
-@import '../../helpers/variables';
-@import '../../components/button';
-@import '../../components/cards';
-@import '../../components/alert';
-@import '../../components/input';
-@import '../../base/base';
+@use '../../components' as *;
+@use '../../helpers' as *;
+
 
 
 .signUp-container {

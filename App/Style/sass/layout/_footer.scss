@@ -1,6 +1,5 @@
-@import '../helpers/variables';
-@import '../components/input';
-@import '../base/base';
+@use '../components' as *;
+@use '../helpers' as *;
 
 
 .feed-container {

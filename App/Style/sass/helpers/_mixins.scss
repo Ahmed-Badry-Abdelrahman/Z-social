@@ -1,8 +1,8 @@
-/// Mixin to prefix a property
-/// @author Kitty Giraudel
-/// @param {String} $property - Property name
-/// @param {*} $value - Property value
-/// @param {List} $prefixes (()) - List of prefixes to print
+@use './breakpoint' as *;
+@use './shadow' as *;
+@use './functions' as *;
+@use './colors' as *;
+
 @mixin prefix($property, $value, $prefixes: ()) {
     @each $prefix in $prefixes {
         #{'-' + $prefix + '-' + $property}: $value;

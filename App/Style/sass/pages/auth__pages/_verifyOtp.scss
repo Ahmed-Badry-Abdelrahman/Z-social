@@ -1,8 +1,7 @@
-@import '../../helpers/variables';
-@import '../../components/button';
-@import '../../components/cards';
-@import '../../components/alert';
-@import '../../base/base';
+@use '../../components' as *;
+@use '../../helpers' as *;
+
+
 
 .verifyOtp-container {
     .row {

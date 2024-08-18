@@ -1,0 +1,16 @@
+@use './sass/base/base';
+
+// using all the partials
+@use './sass/pages/auth__pages/checkInbox';
+@use './sass/layout/header';
+@use './sass/layout/left_aside';
+@use './sass/pages/feed__pages/feedPage';
+@use './sass/layout/right_aside';
+@use './sass/layout/footer';
+@use './sass/pages/auth__pages/forgotPassword';
+@use './sass/pages/auth__pages/login';
+@use './sass/pages/auth__pages/loginWithEmail';
+@use './sass/pages/auth__pages/resetPassword';
+@use './sass/pages/auth__pages/signUp';
+@use './sass/pages/auth__pages/verifyOtp';
+

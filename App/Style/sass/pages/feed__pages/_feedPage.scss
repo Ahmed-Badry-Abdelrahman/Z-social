@@ -1,8 +1,6 @@
-@import '../../helpers/variables';
-@import '../../components/input';
-@import '../../components/_button';
-// @import '../../components/modals';
-@import '../../base/base';
+@use '../../components' as *;
+@use '../../helpers' as *;
+
 
 .posts__container {
     margin-top: rem(120);
